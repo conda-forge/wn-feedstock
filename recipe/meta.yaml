@@ -1,5 +1,5 @@
 {% set name = "wn" %}
-{% set version = "0.9.5" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wn-{{ version }}.tar.gz
-  sha256: 9ae62e0e6607f56e63e9eb8360930c8337ecc44e9e0488430aa1fa3fb9c51be4
+  sha256: c0e6852e5142354a3b4565a231746ecedc952535e926d3ef6498bd77a52691c6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
